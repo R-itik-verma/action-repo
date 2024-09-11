@@ -15,4 +15,4 @@ jobs:
         run: |
           curl -X POST -H "Content-Type: application/json" \
           -d '{"action": "'${{ github.event_name }}'", "author": "'${{ github.actor }}'", "ref": "'${{ github.ref }}'", "timestamp": "'${{ github.event.head_commit.timestamp }}'"}' \
-          https://locatlhost:5000/webhook
+          mongodb+srv://gritikverma331:OyufWd2vgwOJUBVA@cluster0.uws1t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
